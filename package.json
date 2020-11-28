@@ -1,0 +1,27 @@
+{
+  "name": "reprograma-projeto-final",
+  "version": "1.0.0",
+  "description": "Diversas - Projeto Final ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianyqueiroz/reprograma-projeto-final.git"
+  },
+  "author": "Mariany Queiroz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marianyqueiroz/reprograma-projeto-final/issues"
+  },
+  "homepage": "https://github.com/marianyqueiroz/reprograma-projeto-final#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "mongoose": "^5.10.17",
+    "nodemon": "^2.0.6"
+  }
+}
