@@ -11,14 +11,14 @@ const getAll = (req, res) => {
 
 const postInstituicoes = (req, res) => {
     console.log(req.body);
-
-    let instituicoes = new instituicoes(req.body);
-    instituicoes.save(function(err) {
-        if (err) res.status(500).send({ message : err.message });
-
-        res.status(201).send(instituicoes);
-    });
-};
+  
+    let instituicao = new instituicoes(req.body);
+      instituicao.save(function(err){
+      if (err) res.status(500).send({ message: err.message })
+  
+      res.status(201).send(instituicao.toJSON());
+    })
+  };
 
 module.exports = {
     getAll,
