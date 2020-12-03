@@ -5,7 +5,8 @@ const app = express();
 
 const index = require("./routes/index");
 const instituicoes = require("./routes/instituicoesRoute");
-const capacitacoes = require("./routes/capacitacoesRoute")
+const capacitacoes = require("./routes/capacitacoesRoute");
+const cursos = require("./routes/cursosRoute");
 
 mongoose.connect("mongodb://localhost:27017/reprograma", { useNewUrlParser: true, useUnifiedTopology: true });
 
@@ -27,5 +28,6 @@ app.use(function (req, res, next) {
 app.use("/", index);
 app.use("/instituicoes", instituicoes);
 app.use("/capacitacoes", capacitacoes);
+app.use("/cursos", cursos);
 
 module.exports = app;
