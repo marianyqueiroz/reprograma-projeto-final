@@ -14,13 +14,43 @@ const postInstituicoes = (req, res) => {
   
     let instituicao = new instituicoes(req.body);
       instituicao.save(function(err){
-      if (err) res.status(500).send({ message: err.message })
-  
+      if (err) res.status(500).send({ message: err.message });
       res.status(201).send(instituicao.toJSON());
-    })
+    });
   };
+
+  const putInstituicao = (req, res) => {
+    const _id = req.params._id;
+  
+    try {
+      instituicoes.update(
+          { _id },
+          { $set: req.body },
+          { upsert : true},
+          function (err) {
+          res.status(201).send({ message: "Instituição atualizada com sucesso!" });
+      });
+    } catch (err) {
+      return res.status(424).send({ message: err.message });
+    };
+  };
+
+  const deleteInstituicao = (req, res) => {
+    const _id = req.params._id;
+
+    instituicoes.deleteOne({ _id }, function(err, instituicoes) {
+      if(err) {
+        return res.status(424).send({ message: err.message})
+      } else {
+        return res.status(200).send(instituicoes)
+      }
+    })
+};
+
 
 module.exports = {
     getAll,
-    postInstituicoes
+    postInstituicoes,
+    putInstituicao,
+    deleteInstituicao
 };
