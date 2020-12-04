@@ -9,6 +9,7 @@ const index = require("./routes/index");
 const instituicoes = require("./routes/instituicoesRoute");
 const capacitacoes = require("./routes/capacitacoesRoute");
 const cursos = require("./routes/cursosRoute");
+const usuaries = require("./routes/usuariesRoute");
 
 mongoose.connect(process.env.MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true });
 
@@ -31,5 +32,6 @@ app.use("/", index);
 app.use("/instituicoes", instituicoes);
 app.use("/capacitacoes", capacitacoes);
 app.use("/cursos", cursos);
+app.use("/usuaries", usuaries);
 
 module.exports = app;
