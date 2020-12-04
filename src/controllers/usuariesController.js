@@ -26,7 +26,7 @@ const login = (req, res) => {
     const senhaValida = bcrypt.compareSync(req.body.senha, usuaries.senha);
 
     if (!senhaValida) {
-      return res.status(403).send('Senha inválida!');
+      return res.status(403).send('Eita! Senha inválida');
     }
 
     const token = jwt.sign({ email: req.body.email }, SECRET);
