@@ -1,3 +1,5 @@
+require('dotenv-safe').config();
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
@@ -8,7 +10,7 @@ const instituicoes = require("./routes/instituicoesRoute");
 const capacitacoes = require("./routes/capacitacoesRoute");
 const cursos = require("./routes/cursosRoute");
 
-mongoose.connect("mongodb://localhost:27017/reprograma", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true });
 
 let db = mongoose.connection;
 db.on("error", console.log.bind(console, "connection error:"));
