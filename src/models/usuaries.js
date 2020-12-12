@@ -3,7 +3,8 @@
   const usuariesSchema = new mongoose.Schema({
     nome: { type: String },
     email: { type: String },
-    senha: { type: String }
+    senha: { type: String },
+    cidade: { type: String }
 },{
     versionKey: false
 });
