@@ -12,7 +12,7 @@ const cursos = require("./routes/cursosRoute");
 const usuaries = require("./routes/usuariesRoute");
 const empresas = require("./routes/empresasRoute");
 
-mongoose.connect(process.env.MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(`${process.env.MONGODB_URL}`, { useNewUrlParser: true, useUnifiedTopology: true });
 
 let db = mongoose.connection;
 db.on("error", console.log.bind(console, "connection error:"));
