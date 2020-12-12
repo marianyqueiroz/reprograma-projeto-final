@@ -15,7 +15,7 @@ const postInstituicoes = (req, res) => {
     let instituicao = new instituicoes(req.body);
       instituicao.save(function(err){
       if (err) res.status(500).send({ message: err.message });
-      res.status(201).send(instituicao.toJSON());
+      res.status(201).send("Uma nova instituição foi adicionada!");
     });
   };
 
