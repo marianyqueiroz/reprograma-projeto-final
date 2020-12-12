@@ -10,6 +10,7 @@ const instituicoes = require("./routes/instituicoesRoute");
 const capacitacoes = require("./routes/capacitacoesRoute");
 const cursos = require("./routes/cursosRoute");
 const usuaries = require("./routes/usuariesRoute");
+const empresas = require("./routes/empresasRoute");
 
 mongoose.connect(process.env.MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true });
 
@@ -33,5 +34,6 @@ app.use("/instituicoes", instituicoes);
 app.use("/capacitacoes", capacitacoes);
 app.use("/cursos", cursos);
 app.use("/usuaries", usuaries);
+app.use("/empresas", empresas);
 
 module.exports = app;
