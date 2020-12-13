@@ -44,6 +44,17 @@ const getAll = (req, res) => {
     })
   };
 
+  const deleteUsuarie = (req, res) => {
+    const _id = req.params._id;
+
+    usuaries.deleteOne({ _id }, function(err, usuaries) {
+      if(err) {
+        return res.status(424).send({ message: err.message})
+      } else {
+        return res.status(200).send(usuaries)
+      }
+    })
+
 module.exports = {
   create,
   login,
