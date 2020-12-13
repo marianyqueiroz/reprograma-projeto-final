@@ -44,7 +44,7 @@ const getAll = (req, res) => {
     })
   };
 
-  const deleteUsuarie = (req, res) => {
+const deleteUsuarie = (req, res) => {
     const _id = req.params._id;
 
     usuaries.deleteOne({ _id }, function(err, usuaries) {
@@ -55,8 +55,9 @@ const getAll = (req, res) => {
       }
     })
 
-module.exports = {
-  create,
-  login,
-  getAll
-}
+    module.exports = {
+      create,
+      login,
+      getAll,
+      deleteUsuarie
+    }
