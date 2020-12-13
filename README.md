@@ -3,7 +3,7 @@
 
 ## Unindo Oportunidades
 
-Tendo em vista as múltiplas nuances da questão social, e as inúmeras iniciativas que surgiram visando a diminuição de tais disparidades e do GAP de gênero, me fez refletir sobre a parcela minoritária que possuem acesso à esses instrumentos, e sobre todos os entraves que inviabilizam essa disseminação nas favelas. O Projeto Diversas busca reunir informações sobre a população e LGBTQIA+, negra, periférica e de baixa renda da Região Metropolitana do Recife (RMR), traçando estratégias visam capacitar essas pessoas por meio de uma busca ativa e pesquisa qualitativa e quantitativa nas estruturas que se firmam no Sistema Único de Assistência Social (SUAS) da região.
+Tendo em vista as múltiplas nuances da questão social, e as inúmeras iniciativas que surgiram visando a diminuição de tais disparidades e do GAP de gênero, me fez refletir sobre a parcela minoritária que possuem acesso à esses instrumentos, e sobre todos os entraves que inviabilizam essa disseminação nas favelas. 
 
 ##  Objetivo
 
@@ -62,6 +62,11 @@ DELETE | /instituicoes/:_ id | Apaga instituição | -
 DELETE | /cursos/:_ id | Apaga curso | -
 DELETE | /capacitacoes/:_ id | Apaga curso | -
 
+## Vale ressaltar que: 
+Na imersão feita para a fomentação do projeto, pudemos perceber que **16 cidades** da região metropolitana do recife, apenas **4 cidades possuem políticas públicas para a população LGBTQIA+**.
+
+##### Vamo simbora unir oportunidades por meio da inserção da diversidade nas empresas?
+##### #apoioDiversas
 
 
 
