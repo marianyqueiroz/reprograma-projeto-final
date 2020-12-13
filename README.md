@@ -47,5 +47,19 @@ GET | /instituicoes | Mostra instituições que podem prestar algum tipo de acol
 GET | /capacitacoes | Mostra todas as capacitações que podem ser solicidadas pelas empresas cadastradas | Precisa de autenticação
 GET | /cursos | Mostra todos os cursos gratuitos para usuáries interessados em agragar novos conhecimentos ao currículo | Precisa de autenticação
 POST |/usuaries | Adiciona usuarie | -
-POST | /usuaries/login | Gera o token | -
+POST | /usuaries/login | Gera o token para validação | -
+POST | /instituicoes | Adiciona instituição | -
+POST | /empresas | Adiciona empresa | -
+POST | /cursos | Adiciona curso | -
+POST | /capacitacoes | Adiciona capacitações | -
+POST | /empresas/login | Gera token para validação | - 
+PUT | /instituicoes/:_ id | Altera elemento do objeto por meio do id | -
+PUT | /cursos/:_ id | Altera elemento do objeto por meio do id | -
+PUT | /capacitação/:_ id | Altera elemento do objeto por meio do id | -
+DELETE | /instituicoes/:_ id | Apaga instituição | -
+DELETE | /cursos/:_ id | Apaga curso | -
+DELETE | /capacitacoes/:_ id | Apaga curso | -
+
+
+
 
