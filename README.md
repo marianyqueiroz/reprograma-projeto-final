@@ -31,11 +31,11 @@ Diminuir as disparidades do âmbito social, capacitação e educação de pessoa
 - Clone seu repositório para seu ambiente local;
 - Abra o terminal e digite os comandos:
 
-    npm init
+      npm init
     
-    npm install 
+      npm install 
     
-    npm start 
+      npm start 
     
 ### Rotas disponíveis: 
 
